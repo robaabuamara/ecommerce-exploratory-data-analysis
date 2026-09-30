@@ -1,4 +1,3 @@
-# ecommerce-exploratory-data-analysis
 # E-Commerce Exploratory Data Analysis
 
 This project performs an exploratory data analysis (EDA) on a cleaned e-commerce dataset containing more than **138,000 records**.
@@ -52,8 +51,6 @@ The analysis focuses on answering questions such as:
 ---
 
 ## Analysis Sections
-
-The notebook includes:
 
 - Data Loading & Overview
 - Time & Seasonality Analysis
@@ -122,7 +119,7 @@ This comparison should be interpreted carefully because the dataset contains rel
 
 The **USA** generated the highest total net sales by a substantial margin.
 
-After excluding the USA to better compare the remaining markets:
+After excluding the USA to better compare the remaining markets, the strongest markets were:
 
 1. UK
 2. Germany
@@ -130,8 +127,6 @@ After excluding the USA to better compare the remaining markets:
 4. Australia
 5. India
 6. UAE
-
-The UK remained the strongest market outside the USA.
 
 ---
 
@@ -169,7 +164,7 @@ Delivery performance was generally close to expectations:
 - Late: approximately **15%**
 - Early: approximately **8%**
 
-The median delivery delay was **0 days**, while the average delay was only around **0.26 days**.
+The median delivery delay was **0 days**, while the average delay was around **0.26 days**.
 
 ---
 
@@ -211,13 +206,9 @@ Review sentiment was also consistent with numerical customer ratings.
 
 Approximately **20% of orders used a coupon**, and coupon usage remained very stable throughout the year.
 
-Orders with and without coupon codes showed very similar average:
+Orders with and without coupon codes showed very similar average net sales, discount amounts, and profit.
 
-- Net sales
-- Discount amounts
-- Profit
-
-Discount amounts were also present on orders without coupon codes, suggesting that the `discount_amount` field likely includes discounts beyond coupon usage alone.
+Because discounts were also present on orders without coupon codes, the `discount_amount` field likely reflects additional types of discounts beyond coupon usage.
 
 Coupon usage did not noticeably increase during November or December, meaning that the end-of-year sales increase was not primarily explained by higher coupon usage.
 
@@ -237,8 +228,6 @@ A large proportion of campaign values were unknown, so campaign-related conclusi
 
 ## Recommendations
 
-Based on the analysis:
-
 - Prepare inventory and delivery capacity for **November and December**, when sales consistently increase.
 - Prioritize reducing delivery delays because late deliveries were associated with lower customer ratings and fewer positive reviews.
 - Improve marketing campaign tracking because a large proportion of campaign information is unknown.
@@ -247,8 +236,6 @@ Based on the analysis:
 ---
 
 ## Limitations
-
-Several findings should be interpreted with caution:
 
 - The dataset contains relatively few one-time customers compared with repeat customers.
 - The exact calculation used for `customer_lifetime_value` is not documented in this analysis.
@@ -272,8 +259,33 @@ Several findings should be interpreted with caution:
 
 ## Repository Structure
 
-```text
-ecommerce-exploratory-data-analysis/
-│
-├── e-commerce-exploratory-data-analysis.ipynb
-└── README.md
+- `e-commerce-exploratory-data-analysis.ipynb`
+- `README.md`
+
+---
+
+## Kaggle Notebook
+
+The complete notebook with code, outputs, tables, and visualizations is available on Kaggle.
+
+**Kaggle Notebook:**  
+https://www.kaggle.com/code/robaabuamara/e-commerce-exploratory-data-analysis
+
+## How to Run
+
+1. Download or clone this repository.
+2. Download the original dataset from Kaggle.
+3. Use the cleaned dataset produced in the related Data Cleaning project.
+4. Open the notebook in Kaggle, Jupyter Notebook, or Google Colab.
+5. Update the dataset path if necessary.
+6. Run the notebook cells in order.
+
+---
+
+## Project Background
+
+This project was created as a practical continuation of my learning in **Data Cleaning and Data Analysis**.
+
+After cleaning and preprocessing the original e-commerce dataset, I used the cleaned data to practice exploratory data analysis, visualization, business-oriented questioning, and interpreting patterns rather than simply generating charts.
+
+The project helped strengthen my practical skills in **Python, Pandas, Exploratory Data Analysis, Data Visualization, and Business Data Analysis**.
