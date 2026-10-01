@@ -1,4 +1,3 @@
-![Net Sales by Country](country_sales.png)
 # E-Commerce Exploratory Data Analysis
 
 This project performs an exploratory data analysis (EDA) on a cleaned e-commerce dataset containing more than **138,000 records**.
@@ -78,6 +77,9 @@ Annual net sales remained highly stable between **2021 and 2025**, with year-ove
 
 A clear seasonal pattern appeared across all five years. **November and December consistently recorded the highest sales**, while February generally recorded the lowest.
 
+![Net Sales by Country](country_sales.png)
+
+![Sales Heatmap](sales_heatmap.png)
 ---
 
 ### Sales Channels
@@ -129,6 +131,7 @@ After excluding the USA to better compare the remaining markets, the strongest m
 5. India
 6. UAE
 
+![Net Sales by Country](country_sales.png)
 ---
 
 ### Payment Methods
