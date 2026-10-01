@@ -1,3 +1,4 @@
+![Net Sales by Country](country_sales.png)
 # E-Commerce Exploratory Data Analysis
 
 This project performs an exploratory data analysis (EDA) on a cleaned e-commerce dataset containing more than **138,000 records**.
